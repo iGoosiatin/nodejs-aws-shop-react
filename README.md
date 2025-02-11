@@ -36,3 +36,7 @@ Runs tests in console, in browser or with coverage.
 ### `lint`, `prettier`
 
 Runs linting and formatting for all files in `src` folder.
+
+## Deployment info
+- [S3 bucket URL](http://goosestorespadeploymentst-goosestorespabucket3d12e-wt3cdyrztbpm.s3-website-us-east-1.amazonaws.com/)
+- [CloudFront URL](https://d2i2j0vpgl0qk2.cloudfront.net/)
