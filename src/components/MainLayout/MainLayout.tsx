@@ -4,6 +4,7 @@ import Link from "@mui/material/Link";
 import Container from "@mui/material/Container";
 import Header from "~/components/MainLayout/components/Header";
 import Box from "@mui/material/Box";
+import AlertNotification from "../Alert/Alert";
 
 function Copyright() {
   return (
@@ -21,6 +22,7 @@ function Copyright() {
 const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <>
+      <AlertNotification />
       <Header />
       <main>
         <Container sx={{ pb: 8 }} maxWidth="md">
