@@ -29,6 +29,10 @@ export const OrderSchema = Yup.object({
   id: Yup.string().required(),
   items: Yup.array().of(OrderItemSchema).defined(),
   address: AddressSchema.required(),
+  status: Yup.mixed<OrderStatus>()
+    .oneOf(Object.values(OrderStatus))
+    .required()
+    .default(OrderStatus.Open),
   statusHistory: Yup.array().of(statusHistorySchema).defined(),
 }).defined();
 
