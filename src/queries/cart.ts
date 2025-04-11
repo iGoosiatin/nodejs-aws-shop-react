@@ -10,7 +10,6 @@ export function useCart() {
       headers: {
         Authorization: `Basic ${localStorage.getItem("authorization_token")}`,
       },
-      withCredentials: true,
     });
     return res.data;
   });
@@ -35,7 +34,6 @@ export function useUpsertCart() {
       headers: {
         Authorization: `Basic ${localStorage.getItem("authorization_token")}`,
       },
-      withCredentials: true,
     })
   );
 }
