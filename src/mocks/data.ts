@@ -80,6 +80,7 @@ export const orders: Order[] = [
       { productId: "7567ec4b-b10c-48c5-9345-fc73c48a80aa", count: 2 },
       { productId: "7567ec4b-b10c-45c5-9345-fc73c48a80a1", count: 5 },
     ],
+    status: OrderStatus.Open,
     statusHistory: [
       { status: OrderStatus.Open, timestamp: Date.now(), comment: "New order" },
     ],
@@ -93,6 +94,7 @@ export const orders: Order[] = [
       comment: "Ship fast!",
     },
     items: [{ productId: "7567ec4b-b10c-48c5-9345-fc73c48a80aa", count: 3 }],
+    status: OrderStatus.Sent,
     statusHistory: [
       {
         status: OrderStatus.Sent,
